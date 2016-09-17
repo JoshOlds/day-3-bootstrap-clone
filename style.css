@@ -1,5 +1,18 @@
 
+.transparent{
+    background: rgba(0,0,0,0);
+    border: none;
+}
 
+.brand{
+    color: white;
+    font-family: "Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+    font-size: 36px;
+    padding:10px;
+}
+.white{
+    color:white;
+}
 .btn-rounded {
 	/*background: none;*/
 	/*padding: 12px 22px;*/
@@ -8,21 +21,6 @@
     border-color: rgba(0,0,0,0);
     /*box-shadow: 0px 0px 5px black;*/
     margin: 10px 0px;
-}
-
-@media(max-width : 1000px){
-    .btn-xs-larger{
-        font-size: 72px;
-        background-color: rgba(128,128,128,.25);
-        box-shadow: 0px 0px 15px black;
-        margin:50px;
-    }
-    .section-2-text{
-        padding: 0px;
-    }
-    .section-2-padding{
-        padding: 0px;
-    }
 }
 
 .flex-center{
@@ -51,7 +49,7 @@
     padding: 0px 150px;
 }
 .section-1-padding{
-    padding: 100px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
 }
 .section-1-phone-image{
     max-height: auto;
@@ -80,7 +78,6 @@
     color:darkgrey;
     max-width: 40%;
     margin: auto;
-    text-size: 1.5em;
     margin-bottom: 50px;
 }
 .section-2-buttons{
@@ -92,6 +89,8 @@
     animation-duration: .75s;
     animation-fill-mode: forwards;
 }
+
+
 @keyframes button-fadein{
     from {
         box-shadow: 0px 0px 0px rgb(255,255,255);
@@ -107,10 +106,104 @@
 .section-2-item-header{
     
 }
+.section-3-nopadding{
+    padding: 0px;
+    height: 507px;
+}
 .section-2-item-text{
     color:gray;
+}
+
+.section-3-right{
+    background-color:cornflowerblue;
+}
+.section-3-header{
+    color: white;
+    font-size: 4em;
+    padding-left: 55px;
+    padding-top: 120px;
+}
+.section-3-text{
+    color: white;
+    font-size: 1em;
+    padding-left: 55px;
+    padding-top: 60px;
+    line-height: 30px;
+    width: 75%;
+}
+.section-4{
+    background-color: dimgray;
+}
+
+.section-4-address{
+    color: white;
+    font-family: "Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+    padding: 0px;
+}
+.section-4-address-padding{
+    padding: 10px;
+}
+.section-4-icon{
+    font-size: 60px;
+    color: white;
+    padding: 50px 10px;
+}
+.section-4-icon:hover{
+    animation-name: icon-highlight;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes icon-highlight{
+    from {
+        color: white;
+        font-size: 60px;
+    }
+    to {
+        color: lightseagreen;
+        font-size: 75px;
+    }
 }
 .row-extra-padding{
     padding: 0px 20% ;
 }
 
+@media(max-width : 1000px){
+    .btn-xs-larger{
+        font-size: 72px;
+        background-color: rgba(128,128,128,.25);
+        box-shadow: 0px 0px 15px black;
+        margin:50px;
+    }
+    .section-2-text{
+        color:darkgrey;
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+    }   
+    .section-2-item-text{
+    color:gray;
+    width: 80%;
+    margin: auto;
+    }
+    .section-2-padding{
+        padding: 0px;
+    }
+    .section-3-header{
+        text-align: center;
+        font-size: 6em;
+        padding-top: 80px;
+    }
+    .section-3-text{
+        text-align: center;
+        font-size: 2em;
+        margin: auto;
+    }
+    .section-4-address{
+        text-align: center;
+        font-size: 2em;
+    }
+    .section-4-header{
+        text-align: center;
+        font-size: 4em;
+    }
+}
